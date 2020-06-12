@@ -61,9 +61,9 @@ function appendToElement(hotelData) {
         temp = temp + "<li><img class='img-thumbnail' src='"+images[i]+"'/></li>";
     }
     inHtml = inHtml + "<ul  class='imgs list-unstyled '>Images" + temp + "</div>";
-    inHtml = inHtml + "<div  class='city'>City: " + hotelData.city + "</div>";
-    inHtml = inHtml + "<div  class='country'>Country: " + hotelData.country + "</div>";
-    inHtml = inHtml + "<div  class='price'>Price: " + hotelData.price + "</div>";
+    inHtml = inHtml + "<div  class='city small'>City: " + hotelData.city + "</div>";
+    inHtml = inHtml + "<div  class='country small'>Country: " + hotelData.country + "</div>";
+    inHtml = inHtml + "<br/><div  class='price'>Price: " + hotelData.price + "</div>";
     inHtml = inHtml + "<div  class='description lead'>Description: <p>" + hotelData.description + "</p></div>";
     inHtml = inHtml + "<button class='btn btn-primary' onclick=\"getReview('" + hotelData.id + "')\">" + "Show Review" + "</button>";
     inHtml = inHtml + "<div  class='review' id='" + hotelData.id + "'></div>";
