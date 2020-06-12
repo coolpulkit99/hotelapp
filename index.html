@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Hotel app</title>
+    <style>
+        .revname {}
+
+        body {
+            align-items: center;
+        }
+
+        /* button{
+    background-color:blue ;
+    color: white;
+    padding: 10px;
+    
+} */
+        .hotelbox {
+            border: 2px solid rgb(38, 0, 255);
+        }
+
+        .revbox {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            border: 2px solid black;
+
+        }
+
+        p {
+            font-size: small;
+        }
+
+        .name {}
+
+        .country {}
+    </style>
+</head>
+
+<body class="row">
+    <button class="btn btn-primary col-sm-12" onclick="getHotelData()">
+        Load Hotels
+    </button>
+
+    <div name="hotel container" class="col-sm-11">
+        <ul id="hoteldata"></ul>
+    </div>
+
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
