@@ -53,19 +53,18 @@ function clearReviews(idval) {
 function appendToElement(hotelData) {
 
     let inHtml = "";
-    inHtml = inHtml + "<div class='name'>Name: " + hotelData.name + "</div><br/>";
-    let images=hotelData.images;
-    let temp="";
-    for(let i=0;i<images.length;i++)
-    {
-        temp = temp + "<li><img class='img-thumbnail' src='"+images[i]+"'/></li>";
+    inHtml = inHtml + "<div class='name text-center '>" + hotelData.name + "</div><br/>";
+    let images = hotelData.images;
+    let temp = "";
+    for (let i = 0; i < images.length; i++) {
+        temp = temp + "<li><img class='img-thumbnail img-responsive center-block' src='" + images[i] + "'/></li>";
     }
-    inHtml = inHtml + "<ul  class='imgs list-unstyled '>Images" + temp + "</div>";
-    inHtml = inHtml + "<div  class='city small'>City: " + hotelData.city + "</div>";
-    inHtml = inHtml + "<div  class='country small'>Country: " + hotelData.country + "</div>";
-    inHtml = inHtml + "<br/><div  class='price'>Price: " + hotelData.price + "</div>";
+    inHtml = inHtml + "<ul  class='imgs list-unstyled '><div class='text-center'>Images</div>" + temp + "</div>";
+    inHtml = inHtml + "<div  class='text-center  city small'>City: " + hotelData.city + "</div>";
+    inHtml = inHtml + "<div  class='text-center  country small'>Country: " + hotelData.country + "</div>";
+    inHtml = inHtml + "<div  class='text-center price'>Price: " + hotelData.price + "</div>";
     inHtml = inHtml + "<div  class='description lead'>Description: <p>" + hotelData.description + "</p></div>";
-    inHtml = inHtml + "<button class='btn btn-primary' onclick=\"getReview('" + hotelData.id + "')\">" + "Show Review" + "</button>";
+    inHtml = inHtml + "<button class='center-block btn btn-primary' onclick=\"getReview('" + hotelData.id + "')\">" + "Show Review" + "</button>";
     inHtml = inHtml + "<div  class='review' id='" + hotelData.id + "'></div>";
     inHtml = "<li class='hotelbox'>" + inHtml + "</li><br/>";
 
